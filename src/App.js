@@ -13,7 +13,7 @@ function App() {
     photo2,
     photo3,
   ]; // Add paths to your photos here
-  const birthdayDate = new Date('2024-08-13T00:00:00'); // Replace with the birthday date
+  const birthdayDate = new Date('2024-08-10T00:00:00'); // Replace with the birthday date
 
   return (
     <div className="App">

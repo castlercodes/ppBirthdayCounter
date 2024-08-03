@@ -12,11 +12,11 @@ const PhotoSlideshow = ({ photos, interval }) => {
   }, [photos, interval]);
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '500px', width: '80%' }}>
+    <div className="slideshow-container">
       <img
         src={photos[currentIndex]}
         alt="Birthday Person"
-        style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', borderRadius: '15px' }}
+        className="slideshow-image"
       />
     </div>
   );

@@ -9,6 +9,7 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+    padding: 20px;
   }
   
   .App-header {
@@ -18,5 +19,42 @@
     justify-content: center;
     width: 100%;
     max-width: 800px; /* Adjust the max-width as needed */
+  }
+  
+  .slideshow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+  }
+  
+  .slideshow-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .App-header {
+      max-width: 90%;
+    }
+  
+    .slideshow-container {
+      max-height: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .App-header {
+      max-width: 100%;
+    }
+  
+    .slideshow-container {
+      max-height: 200px;
+    }
   }
   
